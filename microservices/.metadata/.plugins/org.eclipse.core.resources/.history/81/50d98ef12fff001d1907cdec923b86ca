@@ -1,0 +1,14 @@
+spring:
+ application:
+   name: helloservice
+server:
+     port: 8094
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+         defaultZone: http://localhost:8762/eureka
+#         where registry is running
+  instance: 
+    hostname: localhost     

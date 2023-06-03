@@ -1,0 +1,5 @@
+package awsLambda.ust.model;
+
+public class Lambda {
+
+}

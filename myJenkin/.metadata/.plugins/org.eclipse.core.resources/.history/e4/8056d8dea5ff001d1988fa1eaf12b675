@@ -1,0 +1,12 @@
+package com.ust.rest;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EnvDetails {
+
+	@Value("${app.server.name}")
+	private String appServerName;
+	@Value("$app.server.}")
+	private String 
+}

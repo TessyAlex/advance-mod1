@@ -1,0 +1,7 @@
+spring.application.service=eureka
+# the above notation used when multiple microservices are used
+server.port=8762
+# 8761 is the dedicated port number for dedicated service
+
+eureka.client.fetch-registry=false
+eureka.server.wait-time-in-ms-when-sync-empty=0

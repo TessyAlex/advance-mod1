@@ -1,0 +1,16 @@
+package com.example.doctorservice.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DoctorController {
+	@Autowired
+    private DoctorRepository doctorRepository;
+
+    // doctor registration
+    @PostMapping("/register")
+    public ResponseEntity<Doctor> registerDoctor(@RequestBody Doctor doctor) {
+        return new ResponseEntity<>(doctorRepository.save(doctor), HttpStatus.CREATED);
+    }
+
+}

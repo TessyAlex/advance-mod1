@@ -1,0 +1,16 @@
+package com.billingService.resources;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("bill/service")
+public class BillingServiceResources {
+
+	@GetMapping("status")
+	public String status() {
+		return "from billingservice";
+	}
+	
+}
